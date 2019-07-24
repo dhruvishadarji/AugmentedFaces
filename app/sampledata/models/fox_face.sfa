@@ -1,0 +1,47 @@
+{
+  materials: [
+    {
+      name: 'nose',
+      parameters: [
+        {
+          texture: 'nose_fur',
+        },
+      ],
+      source: 'sampledata/models/fox_face_material.mat',
+    },
+    {
+      name: 'earMAT',
+      parameters: [
+        {
+          texture: 'ear_fur',
+        },
+      ],
+      source: 'sampledata/models/fox_face_material.mat',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+      'BoneIndices',
+      'BoneWeights',
+    ],
+    collision: {},
+    file: 'sampledata/models/fox_face.fbx',
+    name: 'fox_face',
+  },
+  samplers: [
+    {
+      file: 'sampledata/models/dog_ear.png',
+      name: 'ear_fur',
+      pipeline_name: 'dog_ear.png',
+    },
+    {
+      file: 'sampledata/models/dog_nose.png',
+      name: 'nose_fur',
+      pipeline_name: '..\\fox\\dog_nose.png',
+    },
+  ],
+  version: '0.54:2',
+}
